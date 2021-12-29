@@ -5,7 +5,8 @@
 \usepackage{fancyhdr}
 \usepackage{fontspec}
 \usepackage{titlesec}
-\usepackage{tocloft}
+% \usepackage{tocloft}
+\usepackage[titles,subfigure]{tocloft}
 \usepackage{multirow}
 \usepackage{makecell}
 \usepackage{hyperref}
@@ -14,8 +15,9 @@
 \usepackage[
     style=gb7714-2015,
     % gbpub=false,         % Uncomment if you do NOT want '[S.l. : s.n.]' in reference entries, GitHub Issue (#47)
-    % gbnamefmt=lowercase, % Uncomment if you do NOT want uppercase author names in reference entries, GitHub Issue (#23)
+     gbnamefmt=lowercase, % Uncomment if you do NOT want uppercase author names in reference entries, GitHub Issue (#23)
 ]{biblatex}
+
 \usepackage{siunitx}
 \usepackage{caption}
 \usepackage{color}
@@ -28,3 +30,21 @@
 \usepackage{xparse}
 \usepackage{bookmark}
 \usepackage{calc}
+%新增
+\usepackage{lscape}
+\usepackage[format=plain,justification=raggedright,font={small,bf,onehalfspacing}]{caption}
+\usepackage{setspace}
+%enumerate间距调整
+\usepackage{paralist}
+\let\itemize\compactitem
+\let\enditemize\endcompactitem
+\let\enumerate\compactenum
+\let\endenumerate\endcompactenum
+\let\description\compactdesc
+\let\enddescription\endcompactdesc
+%
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{subfigure}
+
+\usepackage{booktabs}
