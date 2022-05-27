@@ -20,8 +20,8 @@ if ! [[ -d out/standard ]]; then
     bash ./script/ci/pdf-diff/download_standard_pdf.sh
 fi
 
-curr_path=$(realpath "$(dirname $0)")
-pdf_diff=$(realpath "$curr_path/pdf_diff.sh")
+cuRR\_path=$(realpath "$(dirname $0)")
+pdf_diff=$(realpath "$cuRR\_path/pdf_diff.sh")
 
 echo "Start comparing and generating pdf diff report"
 mkdir -p diff

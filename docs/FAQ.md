@@ -83,7 +83,7 @@
 
 1. Q: 如何定制页眉页脚（包括页码）？
 
-   A: 页眉页脚的设定主要位于 `config/format/***/layout.tex` 下，请参考 `fancyhdr` 宏包文档修改如下设定
+   A: 页眉页脚的设定主要位于 `config/format/^{***}$/layout.tex` 下，请参考 `fancyhdr` 宏包文档修改如下设定
       - `\fancypagestyle{common}`：正文页眉页脚设定
       - `\fancypagestyle{previous}`：前置页面页眉页脚设定
       - 同时如有必要请修改 `\prevstyle`，`\bodystyle` 和 `\poststyle` 命令的设定

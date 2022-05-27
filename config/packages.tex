@@ -16,6 +16,8 @@
     style=gb7714-2015,
     % gbpub=false,         % Uncomment if you do NOT want '[S.l. : s.n.]' in reference entries, GitHub Issue (#47)
      gbnamefmt=lowercase, % Uncomment if you do NOT want uppercase author names in reference entries, GitHub Issue (#23)
+     gbpub=false,
+     gbpunctin=false
 ]{biblatex}
 
 \usepackage{siunitx}
@@ -47,4 +49,18 @@
 \usepackage{enumitem}
 \usepackage{subfigure}
 
+%for long table
+\usepackage{longtable}
+%for table toprule line
 \usepackage{booktabs}
+
+\usepackage{caption}
+\captionsetup[figure]{name={图},labelsep=space} 
+\captionsetup[table]{name={表 },labelsep=space}
+
+\usepackage{amsmath}
+\usepackage{txfonts}
+
+\usepackage{setspace} 
+\usepackage{supertabular}
+\DefineBibliographyStrings{english}{in={}}

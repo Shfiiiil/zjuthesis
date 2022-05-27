@@ -3,8 +3,25 @@
     \bfseries \zihao{3} 摘要
 \end{center}
 
+情绪是人对客观事物的态度体验及相应的行为反应，不仅与个体心理状态和生理健康息息相关，还在学习、判断和决策等机制的发展中起到重要作用。
+因此，有关情绪识别、评估及干预、治疗的研究意义重大。目前，情绪识别主要有量表自我评估法和表情姿态识别法两种，虽然操作和设备上简单有效，但受主观影响很大，结果缺乏客观性和一致性。恐惧和愉悦等情绪活动还受到自主神经系统和中枢神经系统等的调控，具有显著的外周生理变化且不受主观意愿控制。因此，基于外周生理信号进行情绪识别研究具有非常重要的意义。 
 
+论文基于心电、脉搏波和呼吸三种外周生理信号研究识别恐惧、愉悦和平静情绪的方法。通过情绪刺激材料评价实验（66名被试）筛选出能够有效诱发目标情绪且具有普适性的视频材料，在此基础上完成情绪诱发生理实验（66名被试，与情绪刺激材料评价实验不重复），采集到三种生理信号均有效的754个情绪片段。从时域、频域、非线性三个角度构建了多信号、多维度、多参数的情绪特征集。通过非参数检验进行统计学分析，针对恐惧平静二分类、愉悦平静二分类和恐惧愉悦二分类任务分别筛选出 14、23 和 13 个有显著性差异的统计学有效特征，并分析了有效特征和不同情绪之间的特异性关联。将各分类任务中的统计学有效特征集作为输入，使用中等高斯 SVM 构建情绪分类模型，并通过特征组合的方式，采用识别准确率、精确率、召回率和AUC值四个评价指标，选出各分类任务中使用特征量最少且分类效果最好的有效特征集。
+
+初步结果表明，恐惧平静二分类模型使用六特征集合实现了 80.70\% 的识别准确率，愉悦平静二分类模型使用五特征集合实现了 75.00\% 的识别准确率，恐惧愉悦二分类模型使用四特征集合实现了 63.40\% 的识别准确率。分类效果与使用统计学有效特征集的分类模型相比有所改善且模型维度大大降低，有效提升了模型的泛化能力，为基于外周生理信号的情绪识别研究提供了基础。
+~\\
+
+\textbf{关键词}：情绪识别；外周生理信号；支持向量机；恐惧；愉悦
 \cleardoublepage{}
 \begin{center}
     \bfseries \zihao{3} Abstract
 \end{center}
+
+Emotion is manifested as a person's attitude experience towards objective things and corresponding behavioral responses, which is not only closely related to individual psychological state and physical health, but also plays an important role in the development of learning, judgment and decision-making mechanisms. Therefore, research on emotion recognition, assessment, intervention and treatment is of great significance. At present, the commonly used emotion recognition methods include self-assessment of scales and expression and action recognition. Although these two methods are simple and effective, they are greatly influenced by subjectivity, and the results lack objectivity and consistency. Emotional activities such as fear and happy are regulated by autonomic nervous system and central nervous system, with significant peripheral physiological changes and are not controlled by individual will. Therefore, the research on emotion recognition based on peripheral physiological signals is of great significance.
+
+The thesis studies a method of identifying fear, happy and calm emotions based on ECG, PPG and Respiration signal. After the emotional stimulation material evaluation experiment (66 subjects), the universal video materials that can effectively induce the target emotion were selected out. On this basis, the emotional induction physiological experiment (66 subjects, different from the emotional stimulation material evaluation experiment) was completed. 754 emotional segments were collected, in which all three physiological signals were effective. A multi-signal, multi-dimensional and multi-parameter emotional feature set is constructed from three perspectives: time domain, frequency domain and nonlinearity domain. Statistical analysis was carried out by nonparametric test, and 14, 23 and 13 statistically significant features were selected out for the classification tasks of fear-calm, happy-calm and fear-happy, respectively. Specific correlations between effective features and different emotions are analyzed. Taking the statistically effective feature of each classification task as input, a Medium Gaussian SVM is used to construct the classification model, and through feature combination with four evaluation indicators of recognition accuracy, precision, recall and AUC value, the effective feature set with the least amount of features and the best classification effect is selected out. 
+
+Preliminary results suggest that the fear-calm classification model achieved a recognition accuracy of 80.70\% using six features, while the happy-calm classification model achieved 75.00\% accuracy using five features, and the fear-happy classification model achieved 63.40\% accuracy using four features. The classification effect is improved compared with the classification model using the origin statistically effective feature set, and the model dimension is greatly reduced, which provides a basis for emotion recognition based on peripheral physiological signals.
+~\\
+
+\textbf{Keywords}：Emotion recognition; peripheral physiological signals; support vector machine; happy; fear

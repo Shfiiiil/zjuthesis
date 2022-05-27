@@ -5,22 +5,29 @@
 
     \appendixsubsecmajornumbering
 
-    \subsection{一个附录}
+    \subsection{情绪识别实验知情同意书}
 
+    % \begin{center}
+    %     \includepdf[
+    %         pages=1-1,
+    %         scale=0.863,
+    %         pagecommand={\pagestyle{fancy}},
+    %         %frame, % remove this line if you don't want outer fram of pdf
+    %     ]{知情同意书.pdf}
+    % \end{center}
     \begin{figure}[htb]
         \centering
-        \includegraphics{example-image}
-        \caption{附录中的图片}
-        \label{fig:test-appendix}
+        \makebox[\textwidth][c]{\includegraphics[width=1.1\textwidth]{知情同意书.png}}
+        % \includegraphics[width=\linewidth]{知情同意书.png}
+        \setlength{\abovecaptionskip}{3em}
+        \caption{情绪识别实验知情同意书}
+        \label{fig:informed-consent}
     \end{figure}
+    % \begin{figure}[htb]
+    %     \centering
+    %     \includegraphics{example-image}
+    %     \caption{附录中的图片}
+    %     \label{fig:test-appendix}
+    % \end{figure}
 
-    \begin{equation}
-        E=mc^2
-    \end{equation}
-
-    \subsection{另一个附录}
-
-    \begin{equation}
-        x^n + y^n = z^n
-    \end{equation}
 }
